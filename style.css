@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 120px;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+ nav a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    /* display: block;*/
+    width: 130px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    /*z-index: 1;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 5px black;
+    font-family: "Exo", sans-serif;
+  }
+   
+  a:hover {
+    background-color: #ffa500;
+  }
+
+  h2{
+    text-align: center;
+    font-family: "Exo", sans-serif;
+  }
+
+  .inicio {
+    background-image: url(/assets/images/HedyLamarr01_.jpg);
+    width: 100%;
+    height: 130vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .biografia{
+      padding: 65px 0px 0px;
+  }
+  
+  .biografia__img{
+    display: flex;
+    justify-content: center;
+    padding: 50px 40px;
+    align-items: center;
+  }
+
+  .biografia img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+  }
+
+  .biografia p{
+    line-height: 1.8;
+    font-size: 18px;
+    padding: 20px;
+    font-family: "Exo", sans-serif;
+  }
+
+  .biografia__img, .main__text{
+    display: flex;
+    flex-direction: column;
+  }
+/*
+  @media screen (max-width: 500px){
+    flex-direction: column;
+    padding: 50px 40px;
+  }
+
+  @media screen (max-width: 790px) {
+    flex-direction: column;
+    padding: 50px 40px;
+}
+*/
+
+  footer{
+    font-family: "Exo", sans-serif;
+    background-color: red;
+    font-size:14px;
+    display:flex;
+    flex-direction: column;
+  }
