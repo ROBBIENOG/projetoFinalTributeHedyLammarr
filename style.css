@@ -6,7 +6,6 @@
 
 body{
     font-family: "Exo", sans-serif;
-	background-color: lightgoldenrodyellow;
 }
 
 nav {
@@ -17,7 +16,7 @@ nav {
     padding: 10px;
 }
   
-ul {
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -26,7 +25,7 @@ ul {
     padding: 0;
 }
   
-li {
+nav li {
     margin: 0 20px;
 }
  
@@ -51,8 +50,7 @@ nav a:hover {
 }
 
 
-h2{
-    
+h2{    
     text-align: center;
     margin-bottom: 0;
     font-family: "Exo", sans-serif;
@@ -94,7 +92,7 @@ h2{
 }
 
 .biografia p{
-    width: 800px;
+    width: 100%;
     line-height: 1.8;
     font-size: 16px;
     padding: 20px;
@@ -104,9 +102,55 @@ h2{
 
 .filmografia{
     background-color: #FA8072;
-
+    padding-top: 65px;
 }
 
+.filmografia__container{
+    width: 100%;
+    padding: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.filmografia__card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px dotted black;
+    border-radius: 5%;
+    padding: 20px;
+    width: 500px;
+    background-color: lightgoldenrodyellow ;
+    margin: 20px;
+}
+
+.filmografia__card li{
+       margin: 10px 20px;
+
+}
+.filmografia__card ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+
+.filmografia__img{
+    width: 200px;
+    height: 350px;
+    border-radius: 10%;
+    border: 5px solid #ffa500;
+}
+
+.invencoes {
+    margin-top: 40px;
+}
+.invencoes__video{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
 
 footer{
     font-family: "Exo", sans-serif;
