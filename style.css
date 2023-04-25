@@ -69,7 +69,7 @@ h2{
     position: relative;
 }
   
-.biografia{
+.biografia {
       padding: 65px;
       background-color: white;
       display: flex;
@@ -100,6 +100,11 @@ h2{
     padding: 20px;
     font-family: "Exo", sans-serif;
     text-align: justify;
+}
+
+.filmografia{
+    background-color: #FA8072;
+
 }
 
 
