@@ -12,6 +12,7 @@ nav {
     background-color: black;
     height: 120px;
     padding: 10px;
+    width: 100%;
 }
   
 nav ul {
@@ -83,8 +84,8 @@ h2{
 }
 
 .biografia img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     align-items: center;
     border: #FA8072 5px solid;
@@ -110,6 +111,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .filmografia__card{
@@ -144,6 +146,7 @@ h2{
 
 .invencoes {
     margin-top: 40px;
+    width: 100%;
 }
 .invencoes__video{
     padding: 50px;
@@ -151,7 +154,12 @@ h2{
     justify-content: center;
 }
 
+iframe{
+    border-radius:5%;
+}
+
 footer{
+    width: 100%;
     font-family: "Exo", sans-serif;
     background-color: #FA8072;
     font-size:14px;
@@ -159,4 +167,34 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .inicio{
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .biografia__img {
+        flex-direction: column;
+    }
+    
+    .biografia__img img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .biografia__img p {
+        width: 100%;
+    }
+
+    .filmografia{
+        flex-direction: column;
+    }
+
+    iframe, footer {
+        width: 100%;
+    }
 }
