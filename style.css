@@ -56,6 +56,15 @@ h2{
     
 }
 
+main{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	
+}
+
 .inicio {
     background-image: url(./assets/images/Hedy-Lamarr-DQ-Wild.png);
     width: 100%;
@@ -200,8 +209,15 @@ footer{
     align-items: center;
 }
 
+/* media queries para telas com 768px-----------*/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 790px) {
+
+    
+    .navigation a{
+        padding: 10px 12px;
+		font-size: 18px;
+    }
     .inicio{
         object-fit: cover;
         object-position: left;
@@ -209,23 +225,60 @@ footer{
 
     .biografia__img {
         flex-direction: column;
+        padding: 50px 40px;
     }
     
     .biografia__img img {
-        width: 100%;
+        width: 60%;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
     .biografia__img p {
-        width: 100%;
+        width: 90%;
     }
 
     .filmografia{
         flex-direction: column;
     }
 
-    iframe, footer {
+    .filmografia__container{
+        padding: 40px;
+		align-items: flex-start;
+    }
+    
+    .filmografia__card{
+        padding: 0 10px;
+		margin: 10px;
+		width: 100%;
+		height: 207px;
+    }
+
+    .filmografia__card img{
+        width: 110px;
+		height: 160px;
+    }
+
+    .filmografia__card ul{
+        padding-left: 30px;
+		font-size: 16px;
+    }
+
+    iframe, footer,.sec__carrossel {
         width: 100%;
     }
+}
+
+/* media queries para telas com 500px-----------*/
+
+@media screen and (max-width: 500px) {
+    header{
+        justify-content: flex-end;
+    }
+
+
+/* estilo do nav para telas pequenas*/
+
+
+
 }
