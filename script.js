@@ -1,18 +1,19 @@
-const imgs = document.getElementById("carrossel__img");
-const img = document.querySelectorAll("#carrossel__img img");
 
-let idx = 0;
+let count = 1;
 
-function carrossel(){
-    idx++;
+document.getElementById("radio1").checked = true;
 
-    if(idx > img.length -1){
-    	idx =0;
+setInterval(function(){
+    nextImage();
+}, 2000)
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
     }
+
+    document.getElementById("radio"+count).checked = true; 
+
 }
-
-imgs.style.transform = translateX($[-idx * 500],px);
-
-setInterval(carrossel,1800);
-
 

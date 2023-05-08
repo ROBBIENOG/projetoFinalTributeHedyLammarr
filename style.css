@@ -7,28 +7,24 @@
 
 
 nav {
-    display: flex;
-    justify-content: center;
     background-color: black;
     height: 120px;
     padding: 10px;
-    width: 100%;
+    
 }
-  
+
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    align-items: center;    
 }
-  
+
 nav li {
     margin: 0 20px;
 }
- 
-nav a {
+
+nav li a {
     color: black;
     font-size: 24px;
     text-decoration: none;   
@@ -43,7 +39,7 @@ nav a {
     text-shadow: 0px 0px 5px black;
     font-family: "Exo", sans-serif;
 }
-   
+ 
 nav a:hover {
     background-color: #ffa500;
 }
@@ -56,28 +52,20 @@ h2{
     
 }
 
-main{
-    display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	
-}
 
 .inicio {
+    
     background-image: url(./assets/images/Hedy-Lamarr-DQ-Wild.png);
     width: 100%;
     height: 130vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
   
 .biografia {
-      padding: 65px;
+      padding-top: 65px;
       background-color: white;
       display: flex;
       flex-direction: column;
@@ -166,35 +154,125 @@ main{
 
 iframe{
     border-radius:5%;
+    width: 800px;
+    height: 600px;
 }
 
-/*Carrossel*/
 
-.sec__carrossel{
+
+.slide__container{
+    width: 100%;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    align-items: center;
 }
 
-.carrossel{
-    box-shadow: 2px 2px 4px black;
+.slider{
+    margin:0 auto;
+    width: 800px;
+    height:600px;
     overflow: hidden;
-    height: 500px;
-    width: 500px;
-}
-
-.carrossel__container{
+    
+  }
+  
+  .slides{
+    width:400%;
+    height: 600px;
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0) ;
-}
+  }
+  
+  .slides input{
+    display:none;
+  }
+  
+  .slide{
+    width: 50%;
+    position: relative;
+    transition: 5s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 600px;
+  }
+  
+  .manual__navigation{
+    position:absolute;
+    width:800px;
+    margin-top:-40px;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .manual__btn{
+    border: 2px solid #FA8072;
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual__btn:not(:last-child)  {
+    margin-right:40px;
+  }
+  
+  .manual__btn:hover{
+    background-color: #ffa500;
+  }
+  
+  #radio1:checked ~ .first{
+    margin:0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin: -17%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin:-50%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin: -75%;
+  }
 
-.carr__img{
-    object-fit: cover;
-    width: 500px;
-    height: 500px;
-}
+  .navigation__auto div{
+    border:2px blue solid;
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+    transition:1s;
+  }
+
+  .navigation__auto {
+    position:absolute;
+    width: 800px;
+    margin-top:560px;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation__auto div:not(:last-child){
+    margin-right: 40px;
+  }
+
+  #radio1:checked ~ .navigation__auto .auto__btn1{
+    background-color: #ffa500;
+  }
+
+  #radio2:checked ~ .navigation__auto .auto__btn2{
+    background-color: #ffa500;
+  }
+
+  #radio3:checked ~ .navigation__auto .auto__btn3{
+    background-color: #ffa500;
+  }
+
+  #radio4:checked ~ .navigation__auto .auto__btn4{
+    background-color: #ffa500;
+  }
+
+
 
 
 
@@ -209,18 +287,26 @@ footer{
     align-items: center;
 }
 
+
 /* media queries para telas com 768px-----------*/
 
 @media screen and (max-width: 790px) {
-
+    .navigation ul{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
     
-    .navigation a{
+    .navigation li a{
         padding: 10px 12px;
 		font-size: 18px;
+        float: left;
+        padding: 15px;
     }
     .inicio{
         object-fit: cover;
         object-position: left;
+        margin-left: 0;
     }
 
     .biografia__img {
@@ -273,11 +359,24 @@ footer{
 
 @media screen and (max-width: 500px) {
     header{
-        justify-content: flex-end;
+        display: block;
     }
 
+    nav{
+        display: block;
+    }
 
-/* estilo do nav para telas pequenas*/
+    nav ul {
+        display: block;
+        
+    }
+
+    nav ul li{
+        width: 40%;
+        height: fit-content;
+        
+    }
+
 
 
 

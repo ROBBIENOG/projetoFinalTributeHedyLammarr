@@ -18,7 +18,7 @@
       <nav class="navigation">
         <ul>
           
-          <li><a href="#inicio__link">Inicio</a></li>
+          <li><a class="active" href="#inicio__link">Inicio</a></li>
           <li><a href="#bio__link">Biografia</a></li>
           <li><a href="#film__link">Filmografia</a></li>
           <li><a href="#invencoes__link">Invenção</a></li>
@@ -181,6 +181,7 @@
           ></iframe>
         </div>
       </section>
+
 	  <!--
       <section class="sec__carrossel">
         <div class="carrossel">
@@ -201,6 +202,46 @@
         </div>
       </section>
 	   -->
+    <section class="slide__container">
+     <div class="slider">
+      <div class="slides">
+        
+        <input type="radio" name="radio__btn" id="radio1">
+        <input type="radio" name="radio__btn" id="radio2">
+        <input type="radio" name="radio__btn" id="radio3">
+        <input type="radio" name="radio__btn" id="radio4">
+        
+        <div class="slide first">
+          <img src="./assets/images/hedyOne.jpg" alt="imagem 1">  
+        </div>
+        <div class="slide">
+          <img src="./assets/images/hedyTwo.jpg" alt="imagem 2">  
+        </div>
+        <div class="slide">
+          <img src="./assets/images/hedyThree.jpg" alt="imagen 3">  
+        </div>
+        <div class="slide">
+          <img src="./assets/images/hedyFour.jpg" alt="imagem 4">  
+        </div>
+        
+        <div class="navigation__auto">
+          <div class="auto__btn1"></div>
+          <div class="auto__btn2"></div>
+          <div class="auto__btn3"></div>
+          <div class="auto__btn4"></div>
+        </div>
+          
+      </div>
+
+      <div class="manual__navigation">
+        <label for="radio1" class="manual__btn"></label>
+        <label for="radio2" class="manual__btn"></label>
+        <label for="radio3" class="manual__btn"></label>
+        <label for="radio4" class="manual__btn"></label>
+      </div>
+
+    </div>
+  </section>
 
     </main>
 
