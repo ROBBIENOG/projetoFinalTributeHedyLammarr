@@ -189,7 +189,7 @@ iframe{
   .slide{
     width: 50%;
     position: relative;
-    transition: 5s;
+    transition: 1s;
   }
   
   .slide img{
@@ -210,7 +210,7 @@ iframe{
     padding: 5px;
     border-radius:10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 2s;
   }
   
   .manual__btn:not(:last-child)  {
@@ -350,7 +350,7 @@ footer{
 		font-size: 16px;
     }
 
-    iframe, footer,.sec__carrossel {
+    iframe, footer,.sec__carrossel, .slide__container {
         width: 100%;
     }
 }
@@ -375,6 +375,10 @@ footer{
         width: 40%;
         height: fit-content;
         
+    }
+
+    .slide__container{
+        width: 100%;
     }
 
 
