@@ -290,7 +290,24 @@ footer{
 
 /* media queries para telas com 768px-----------*/
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 768px) {
+      nav {
+        height: auto;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav li {
+        margin: 10px 0;
+      }
+      nav li a {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        padding: 10px;
+      }
+  
     .navigation ul{
         width: 100%;
         height: auto;
@@ -299,7 +316,7 @@ footer{
     
     .navigation li a{
         padding: 10px 12px;
-		font-size: 18px;
+		    font-size: 18px;
         float: left;
         padding: 15px;
     }
@@ -358,6 +375,23 @@ footer{
 /* media queries para telas com 500px-----------*/
 
 @media screen and (max-width: 500px) {
+    nav {
+      height: auto;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav li {
+      margin: 10px 0;
+    }
+    nav li a {
+      width: auto;
+      height: auto;
+      font-size: 20px;
+      padding: 10px;
+    }
+  
     header{
         display: block;
     }
@@ -380,8 +414,6 @@ footer{
     .slide__container{
         width: 100%;
     }
-
-
 
 
 }
